@@ -1,0 +1,16 @@
+--- 
+spring: 
+  datasource: 
+    password: root
+    url: "jdbc:mysql://localhost:3306/studentenrollment?useSSL=false"
+    username: root
+  jpa: 
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  error:
+    whitelabel: 
+      enabled: false 
+  mvc.view:
+    prefix: /WEB-INF/
+    suffix: .jsp
